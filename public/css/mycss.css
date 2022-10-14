@@ -1,0 +1,115 @@
+
+
+.main_container{}
+.row.heading_row .col a{
+    float:right;
+    background:#5EA382;
+    color:#fff;
+    padding: 5px 30px;
+}
+.button{
+    background:#5EA382;
+    color:#fff;
+    padding: 5px 30px;
+    margin-top: 20px;
+}
+.button:hover{
+    background:#569878;
+    color:#fff;
+}
+
+.content_box{
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 6px 4px 9px rgb(1 1 1 / 40%);
+    padding: 20px;
+    display:block;
+    overflow:hidden;
+}
+.content_box .meta_box{
+    margin: 0px;
+    width: 50%;
+    display: block;
+    float: left;
+    overflow: hidden;
+
+}
+.content_box .readmore{
+    margin: 0px;
+    width: 50%;
+    display: block;
+    float: left;
+    overflow: hidden;
+
+}
+.readmore a{
+    float:right;
+    background:#D9D9D9;
+    color:#111;
+    border-radius:10px;
+    padding:5px 25px;
+    
+}
+.readmore a:hover{
+    background:#d2d2d2;
+}
+
+ul.pagination {
+    float: right;
+    margin-top: 30px;
+}
+ul.pagination .page-item{
+    margin-left:10px;
+}
+ul.pagination .page-item {
+}
+
+
+.comment {
+    display: grid;
+    /* Necessary until MS supports the latest version of the spec */
+    -ms-grid-columns: auto 1fr;
+    /* period represents an empty area in the grid */
+    /* auto 1fr means the second column will be greedy and fill all available space */
+    grid-template:
+      'avatar-area comment-area'
+      '. nested-comments-area'
+      / auto 1fr;
+  }
+  
+  
+  .content-wrapper {
+    padding: 10px;
+    /* Necessary until MS supports the latest version of the spec */
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: comment-area;
+  }
+  
+  .nested-comments-wrapper {
+    padding-left: 20px;
+    /* Necessary until MS supports the latest version of the spec */
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: nested-comments-area;
+  }
+  .mycomments .card{
+    border-radius: 0px;
+    margin-top: 20px;
+  }
+  .mycomments{
+    margin-top: 30px;
+  }
+  .mycomments .card-body p{
+    margin-bottom: 0px;
+  }
+
+  .myalart{
+    position: fixed;
+    top: 0;
+    z-index: 4;
+  }
+  .commentbtn{
+    position: absolute;
+    right:10px;
+  }
